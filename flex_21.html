@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Controlling the Dimensions of Flex Items</title>
+<style>
+.flex-container {
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+    font-size: 32px;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+    border: 1px solid #666;
+}
+.flex-container div {
+    padding: 10px;
+}
+.item1 {
+    background: #e84d51;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+}
+.item2 {
+    background: #7ed636;
+    -webkit-flex: 2; /* Safari */
+    flex: 2; /* Standard syntax */
+}
+.item3 {
+    background: #2f97ff;
+    -webkit-flex: 1; /* Safari */
+    flex: 1; /* Standard syntax */
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    <p><strong>Note:</strong> Experiment with the value of flex property for individual flex item to understand how the dimension of flex items are calculated.</p>
+</body>
+</html>

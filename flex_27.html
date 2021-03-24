@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Wrapping of Flex Items inside Flex Container</title>
+<style>
+.flex-container {
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+    font-size: 32px;
+    border: 1px solid black;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    /* Standard syntax */
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container div{
+    padding: 10px;
+    width: 130px;
+}
+.item1 {
+    background: #e84d51;
+}
+.item2 {
+    background: #7ed636;
+}
+.item3 {
+    background: #2f97ff;
+}
+.item4 {
+    background: #9c82d2;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+    <p><strong>Note:</strong> Try the other values for the align-items property like, "flex-start", "flex-end", "baseline" and "stretch" to understand how it aligns the items inside flex container.</p>
+</body>
+</html>

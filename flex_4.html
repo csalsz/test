@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Flex 4</title>
+  <style>
+    .flex-header {
+    	display: flex;
+	    background: purple;
+    	align-items: center;
+	    justify-content: space-around;
+    }
+
+    .flex-nav ul {
+	    text-align: center;
+    }
+    .flex-nav li {
+	    display: inline;
+	    padding: .5em 1.5em;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        background: grey;
+	}
+
+    .flex-item:nth-child(1) {
+        order: 0;
+        flex: 1 1 auto;
+        align-self: auto;
+        background: blue;
+    }
+
+    .flex-item:nth-child(2) {
+        order: 0;
+        flex: 2 1 auto;
+        align-self: auto;
+        background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+	<div class="flex-header">
+		<ul class="flex-nav">
+			<li>Portfolio</li>
+			<li>Blog</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+    <div class="flex-container">
+        <div class="flex-item">1.</div>
+        <div class="flex-item">2.</div>
+    </div>
+
+</body>
+
+</html>

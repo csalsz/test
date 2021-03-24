@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>flex_12</title>
+  <style>
+    body { margin: 0;}
+    /* Flexbox */
+    .main-navigation,
+    .main-navigation ul,
+    .hero { display: flex; flex-flow: row wrap; }
+    .main-navigation { justify-content: space-between; align-items: center; }
+    /* Site header */
+    .site-header { position: fixed; top: 0;
+        z-index: 9999; /* Always on top */
+	    width: 100%; /* Must have width for flex */
+        padding: 24px; color: #fff; background-color: #021928; }
+    /* Hero */
+    .hero { position: relative; /* For image */
+	    height: 100vh; /* Fill viewport */
+        justify-content: center; align-items: center; }
+    .hero img { position: absolute; top: 0; left: 0; width: 100%;
+	    z-index: -1; /* Send image to back */
+	    height: 100vh; object-fit: cover; object-position: bottom; }
+    /* Cosmetic */
+    ul { margin: 0; padding: 0; list-style: none; }
+    li { margin-right: 12px; }
+    li:last-child { margin: 0; }
+    a,
+    a:visited,
+    a:focus,
+    a:hover { color: #fff; }
+    p { padding: 24px; }
+    .caption { padding: 0; }
+    h1 { margin: 0 0 12px; }
+    .logo { margin: 0; }
+    .caption { max-width: 600px; text-align: center; color: #fff; }
+    .site-footer { padding: 24px; background-color: #021928; color: #fff; }
+  </style>
+</head>
+
+<body>
+    <div class="site-header">
+
+  <nav class="main-navigation">
+    <h1 class="logo">Logo</h1>
+    <ul>
+      <li><a href="#">Item One</a></li>
+      <li><a href="#">Item Two</a></li>
+      <li><a href="#">Item Three</a></li>
+    </ul>
+  </nav>
+
+</div><!-- .site-header -->
+
+<div class="hero">
+
+  <div class="caption">
+    <h1>Title goes here</h1>
+    <p class="caption">And a caption</p>
+  </div>
+
+  <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/3963/production/_103119641_7623dbe4-9ef2-4108-a2f1-a745d0640c53.jpg" alt="Kittens">
+
+</div><!-- .hero -->
+
+<div class="main">
+  <p>Main page content</p>
+</div><!-- .main -->
+
+<div class="site-footer">
+  <span>Some information about stuff</span>
+</div><!-- .site-footer -->
+
+</body>
+
+</html>

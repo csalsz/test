@@ -3,8 +3,8 @@
 <html>
 
 <head>
-  <title>fex_1</title>
-	<style>
+  <title>flex_0</title>
+  	<style>
 		.panel-container {
     		display: flex;
     		flex-direction: row;
@@ -13,15 +13,17 @@
     		align-items: stretch;
 		}
 		.panel-left {
-    		flex: 2;
+    		flex: none; /* manual resize */
+    		width: 200px;
     		background: blue;
 		}
 		.splitter {
-    		flex: 1;
-    		background: red;
+    		flex: none; /* manual resize */
+    		width: 100px;
+   			background: red;
 		}
 		.panel-right {
-    		flex: 4;
+    		flex: 1; /* resizable */
     		background: yellow;
 		}
 	</style>
